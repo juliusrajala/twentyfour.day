@@ -23,4 +23,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
-For any queries or suggestions, feel free to [open an issue](https://github.com/yourgithubusername/twentyfour.day/issues) on this repository.
+For any queries or suggestions, feel free to [open an issue](https://github.com/juliusrajala/twentyfour.day/issues) on this repository.
