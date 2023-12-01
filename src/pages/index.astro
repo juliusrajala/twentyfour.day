@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SourceLink from "../components/SourceLink.astro";
+
+import questions from "../data/questions.json";
+
+const currentDate = new Date().getDate();
+const lastDateToShow = currentDate + 4;
+const toShow = questions.slice(0, lastDateToShow);
+---
+
+<Layout title="24 Days of Consulting">
+	<main>
+		<div class="title-container">
+			<SourceLink />
+			<h1>24 Days of <span class="text-emphasis">Software Consulting</span></h1>
+		</div>
+
+		<div class="question-list-container">
+			<ol role="list" class="question-list">
+				{
+					toShow.map((question, idx) => {
+						const date = idx + 1;
+						return (
+							<li
+								class="question-list-item"
+								style={{ opacity: date <= currentDate ? 1 : 1 - date * 0.17 }}
+							>
+								<span style={{ fontWeight: 500, display: "block" }}>
+									{question.question}
+								</span>
+								{date <= currentDate && (
+									<span
+										style={{
+											fontWeight: 300,
+											display: "block",
+											marginTop: "0.3rem",
+										}}
+									>
+										{question.answer}
+									</span>
+								)}
+							</li>
+						);
+					})
+				}
+			</ol>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 1em;
+	}
+	.title-container {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	.text-emphasis {
+		color: rgb(251, 110, 110);
+		text-shadow:
+			3px 3px 0px rgba(0, 0, 0, 1),
+			6px 6px 0px white;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(
+			rgba(var(--accent-dark), 66%),
+			rgba(var(--accent-dark), 33%)
+		);
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+
+	.question-list-container {
+		flex: 3;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.question-list {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	.question-list-item {
+		margin-bottom: 1rem;
+		font-weight: 400;
+	}
+	.question-list-item > span:first-child {
+		text-shadow: 1px 1px 0px rgba(251, 110, 110, 0.7);
+	}
+</style>

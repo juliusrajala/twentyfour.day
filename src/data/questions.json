@@ -1,0 +1,98 @@
+[
+    {
+        "question": "How do you approach choosing a tech stack for a new project?",
+        "answer": "Selecting a stack for a new project can be tricky. There's often no single solution to solving any problem. Often, boring technology is better than exciting in the long run. What I think matters most is confidence in the selected tools, from both the perspective of the development team and the client. Every project is different, so consider special needs and future scalability then align your decision with those demands and expectations."
+    },
+    {
+        "question": "What's your strategy for managing technical debt in ongoing projects?",
+        "answer": "asd"
+    },
+    {
+        "question": "How do you balance innovation with maintaining existing systems?",
+        "answer": "lold"
+    },
+    {
+        "question": "Can you describe a particularly challenging bug you encountered and how you resolved it?",
+        "answer": "ye"
+    },
+    {
+        "question": "How do you ensure code quality and maintainability in your team?",
+        "answer": "ya"
+    },
+    {
+        "question": "What's your approach to writing unit tests and integration tests?",
+        "answer": ""
+    },
+    {
+        "question": "How do you handle conflicting opinions within your team about technical approaches?",
+        "answer": ""
+    },
+    {
+        "question": "What are your go-to tools for code profiling and optimization?",
+        "answer": ""
+    },
+    {
+        "question": "How do you stay updated with new programming languages and frameworks?",
+        "answer": ""
+    },
+    {
+        "question": "What's your experience with adopting new technologies mid-project?",
+        "answer": ""
+    },
+    {
+        "question": "Can you share an experience where you had to significantly refactor a codebase?",
+        "answer": ""
+    },
+    {
+        "question": "How do you approach documentation within your team?",
+        "answer": ""
+    },
+    {
+        "question": "What strategies do you use to mentor junior developers?",
+        "answer": ""
+    },
+    {
+        "question": "How do you manage cross-functional team collaboration in projects?",
+        "answer": ""
+    },
+    {
+        "question": "Can you discuss a time when you had to make a critical architectural decision?",
+        "answer": ""
+    },
+    {
+        "question": "How do you handle deadline pressures without compromising on code quality?",
+        "answer": ""
+    },
+    {
+        "question": "What's your approach to troubleshooting and debugging in a complex system?",
+        "answer": ""
+    },
+    {
+        "question": "How do you prioritize tasks in a fast-paced development environment?",
+        "answer": ""
+    },
+    {
+        "question": "Can you share your experience with continuous integration and deployment?",
+        "answer": ""
+    },
+    {
+        "question": "How do you approach security concerns in your software development process?",
+        "answer": ""
+    },
+    {
+        "question": "What has been your most successful project to date, and why?",
+        "answer": ""
+    },
+    {
+        "question": "How do you manage knowledge transfer within your team?",
+        "answer": ""
+    },
+    {
+        "question": "What are your thoughts on microservices vs monolithic architectures?",
+        "answer": ""
+    },
+    {
+        "question": "Can you share an example of a successful agile project you've been part of?",
+        "answer": ""
+    }
+]
