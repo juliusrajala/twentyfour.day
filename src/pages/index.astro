@@ -14,7 +14,6 @@ const toShow = questions.slice(0, lastDateToShow);
 <Layout title="Twentyfour Days of Software Consulting">
   <main>
     <div class="title-container">
-      <SourceLink />
       <p class="info-paragraph">
         The Corporate Software Engineering equivalent of a Beer Calendar.
       </p>
@@ -31,13 +30,13 @@ const toShow = questions.slice(0, lastDateToShow);
       </div>
       <RunningNavigation links={toShow} />
     </div>
+    <SourceLink />
   </main>
 </Layout>
 
 <style>
   main {
     margin: auto;
-    padding: 1rem;
     width: 800px;
     max-width: calc(100% - 2rem);
     color: white;
