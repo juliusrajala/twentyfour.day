@@ -1,0 +1,54 @@
+---
+interface Props {
+  links: any[];
+}
+const { links } = Astro.props;
+const currentPage = Astro.request.url;
+---
+
+<ul class="link-list">
+  <li>
+    <a class="navigation-link" href="/">Home</a>
+  </li>
+  {
+    links.map((_, i) => {
+      const href = `/s/of/consulting/${i + 1}`;
+      const className = currentPage.includes(href)
+        ? "navigation-link navigation-link--isActive"
+        : "navigation-link";
+      return (
+        <li>
+          <a class={className} href={href}>
+            {i + 1}
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  .link-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .link-list li {
+    list-style: none;
+  }
+
+  .navigation-link {
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .navigation-link:visited {
+  }
+  a.navigation-link--isActive {
+    color: rgb(251, 110, 110);
+  }
+</style>

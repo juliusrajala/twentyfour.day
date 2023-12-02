@@ -1,98 +1,98 @@
 [
-    {
-        "question": "How do you approach choosing a tech stack for a new project?",
-        "answer": "Selecting a stack for a new project can be tricky. There's often no single solution to solving any problem. Often, boring technology is better than exciting in the long run. What I think matters most is confidence in the selected tools, from both the perspective of the development team and the client. Every project is different, so consider special needs and future scalability then align your decision with those demands and expectations."
-    },
-    {
-        "question": "What's your strategy for managing technical debt in ongoing projects?",
-        "answer": "A personal favourite for me has been reserving one day in the working week to technical debt and refactoring of the hairier bits in projects. It can sometimes be difficult to justify time spent on this code gardening to the client, but it usually pays out to outline the accruing costs down the road that might follow. The more dependencies your system develops, the harder technical debt is to manage. So continuous maintenance is the way forward."
-    },
-    {
-        "question": "How do you balance innovation with maintaining existing systems?",
-        "answer": "There’s a delicate balance, where time has to be secured for both. The clients business value often comes hand-in-hand with new features, while maintenance is a must to keep the current users content. If your team does sprints, pick items from both maintenance and feature backlogs. If your development is pull-based, make sure you provide some priority to balancing these. Pick both."
-    },
-    {
-        "question": "Can you describe a particularly challenging bug you encountered and how you resolved it?",
-        "answer": "A recent bug I encountered was not super challenging, still a pain in the ass to debug. I’ve been working on a SvelteKit during my free time. I received reports, where users session would get randomly cut out and I could not figure out what was killing them. Turns out my project had preloading links set up on for all link elements, including a logout button I had grabbed from the project template. When users hovered on the button, the signout-page would be preloaded and their session destroyed. Solution: Use preloading with care."
-    },
-    {
-        "question": "How do you ensure code quality and maintainability in your team?",
-        "answer": "ya"
-    },
-    {
-        "question": "What's your approach to writing unit tests and integration tests?",
-        "answer": ""
-    },
-    {
-        "question": "How do you handle conflicting opinions within your team about technical approaches?",
-        "answer": ""
-    },
-    {
-        "question": "What are your go-to tools for code profiling and optimization?",
-        "answer": ""
-    },
-    {
-        "question": "How do you stay updated with new programming languages and frameworks?",
-        "answer": ""
-    },
-    {
-        "question": "What's your experience with adopting new technologies mid-project?",
-        "answer": ""
-    },
-    {
-        "question": "Can you share an experience where you had to significantly refactor a codebase?",
-        "answer": ""
-    },
-    {
-        "question": "How do you approach documentation within your team?",
-        "answer": ""
-    },
-    {
-        "question": "What strategies do you use to mentor junior developers?",
-        "answer": ""
-    },
-    {
-        "question": "How do you manage cross-functional team collaboration in projects?",
-        "answer": ""
-    },
-    {
-        "question": "Can you discuss a time when you had to make a critical architectural decision?",
-        "answer": ""
-    },
-    {
-        "question": "How do you handle deadline pressures without compromising on code quality?",
-        "answer": ""
-    },
-    {
-        "question": "What's your approach to troubleshooting and debugging in a complex system?",
-        "answer": ""
-    },
-    {
-        "question": "How do you prioritize tasks in a fast-paced development environment?",
-        "answer": ""
-    },
-    {
-        "question": "Can you share your experience with continuous integration and deployment?",
-        "answer": ""
-    },
-    {
-        "question": "How do you approach security concerns in your software development process?",
-        "answer": ""
-    },
-    {
-        "question": "What has been your most successful project to date, and why?",
-        "answer": ""
-    },
-    {
-        "question": "How do you manage knowledge transfer within your team?",
-        "answer": ""
-    },
-    {
-        "question": "What are your thoughts on microservices vs monolithic architectures?",
-        "answer": ""
-    },
-    {
-        "question": "Can you share an example of a successful agile project you've been part of?",
-        "answer": ""
-    }
+  {
+    "question": "How do you approach choosing a tech stack for a new project?",
+    "answer": "Selecting a stack for a new project can be tricky. There's often no single solution to solving any problem. Often, boring technology is better than exciting in the long run. What I think matters most is confidence in the selected tools, from both the perspective of the development team and the client. Every project is different, so consider special needs and future scalability then align your decision with those demands and expectations."
+  },
+  {
+    "question": "What's your strategy for managing technical debt in ongoing projects?",
+    "answer": "A personal favourite for me has been reserving one day in the working week to technical debt and refactoring of the hairier bits in projects. It can sometimes be difficult to justify time spent on this code gardening to the client, but it usually pays out to outline the accruing costs down the road that might follow. The more dependencies your system develops, the harder technical debt is to manage. So continuous maintenance is the way forward."
+  },
+  {
+    "question": "How do you balance innovation with maintaining existing systems?",
+    "answer": "There’s a delicate balance, where time has to be secured for both. The clients business value often comes hand-in-hand with new features, while maintenance is a must to keep the current users content. If your team does sprints, pick items from both maintenance and feature backlogs. If your development is pull-based, make sure you provide some priority to balancing these. Pick both."
+  },
+  {
+    "question": "Can you describe a particularly challenging bug you encountered and how you resolved it?",
+    "answer": "A recent bug I encountered was not super challenging, still a pain in the ass to debug. I’ve been working on a SvelteKit during my free time. I received reports, where users session would get randomly cut out and I could not figure out what was killing them. Turns out my project had preloading links set up on for all link elements, including a logout button I had grabbed from the project template. When users hovered on the button, the signout-page would be preloaded and their session destroyed. Solution: Use preloading with care."
+  },
+  {
+    "question": "How do you ensure code quality and maintainability in your team?",
+    "answer": "ya"
+  },
+  {
+    "question": "What's your approach to writing unit tests and integration tests?",
+    "answer": ""
+  },
+  {
+    "question": "How do you handle conflicting opinions within your team about technical approaches?",
+    "answer": ""
+  },
+  {
+    "question": "What are your go-to tools for code profiling and optimization?",
+    "answer": ""
+  },
+  {
+    "question": "How do you stay updated with new programming languages and frameworks?",
+    "answer": ""
+  },
+  {
+    "question": "What's your experience with adopting new technologies mid-project?",
+    "answer": ""
+  },
+  {
+    "question": "Can you share an experience where you had to significantly refactor a codebase?",
+    "answer": ""
+  },
+  {
+    "question": "How do you approach documentation within your team?",
+    "answer": ""
+  },
+  {
+    "question": "What strategies do you use to mentor junior developers?",
+    "answer": ""
+  },
+  {
+    "question": "How do you manage cross-functional team collaboration in projects?",
+    "answer": ""
+  },
+  {
+    "question": "Can you discuss a time when you had to make a critical architectural decision?",
+    "answer": ""
+  },
+  {
+    "question": "How do you handle deadline pressures without compromising on code quality?",
+    "answer": ""
+  },
+  {
+    "question": "What's your approach to troubleshooting and debugging in a complex system?",
+    "answer": ""
+  },
+  {
+    "question": "How do you prioritize tasks in a fast-paced development environment?",
+    "answer": ""
+  },
+  {
+    "question": "Can you share your experience with continuous integration and deployment?",
+    "answer": ""
+  },
+  {
+    "question": "How do you approach security concerns in your software development process?",
+    "answer": ""
+  },
+  {
+    "question": "What has been your most successful project to date, and why?",
+    "answer": ""
+  },
+  {
+    "question": "How do you manage knowledge transfer within your team?",
+    "answer": ""
+  },
+  {
+    "question": "What are your thoughts on microservices vs monolithic architectures?",
+    "answer": ""
+  },
+  {
+    "question": "Can you share an example of a successful agile project you've been part of?",
+    "answer": ""
+  }
 ]

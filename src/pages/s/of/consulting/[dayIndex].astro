@@ -1,6 +1,7 @@
 ---
 import Layout from "../../../../layouts/Layout.astro";
 import SourceLink from "../../../../components/SourceLink.astro";
+import RunningNavigation from "../../../../components/RunningNavigation.astro";
 
 import questions from "../../../../data/questions.json";
 
@@ -18,27 +19,25 @@ if (parsedIndex < 1 || parsedIndex > 24) {
 const question = questions[parsedIndex - 1];
 
 const currentDate = new Date().getDate();
-const disallowAccess = currentDate < parsedIndex;
-const linksToShow = questions.slice(0, currentDate)
-
-if (disallowAccess) {
-  return Astro.redirect("/");
-}
+const hideAnswer = currentDate < parsedIndex;
+const linksToShow = questions.slice(0, currentDate + 1);
 ---
 
 <Layout title={`Twentyfour.days - ${question.question}`}>
   <main>
     <div class="title-container">
       <SourceLink />
-      <h1><span class="text-emphasis">{parsedIndex}. {question.question}</span></h1>
-      {!disallowAccess && <p>{question.answer}</p>}
-      <ul class="link-list">
-        {linksToShow.map((_, i) => (
-          <li>
-            <a href={`/s/of/consulting/${i+1}`}>{i+1}</a>
-          </li>
-        ))}
-      </ul>
+      <h1>
+        <span class="text-emphasis">{parsedIndex}. {question.question}</span>
+      </h1>
+      {
+        !hideAnswer ? (
+          <p>{question.answer}</p>
+        ) : (
+          <p>The answer's coming on {parsedIndex}.12.2023</p>
+        )
+      }
+      <RunningNavigation links={linksToShow} />
     </div>
   </main>
 </Layout>
@@ -68,7 +67,7 @@ if (disallowAccess) {
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
   }
   .text-emphasis {
@@ -76,26 +75,5 @@ if (disallowAccess) {
     text-shadow:
       3px 3px 0px rgba(0, 0, 0, 1),
       6px 6px 0px white;
-  }
-  .link-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left: 0;
-  }
-
-  .link-list li {
-    list-style: none;
-  }
-
-  .link-list > li > a {
-    color: rgb(251, 110, 110);
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  .link-list > li > a:visited {
-    color: white;
   }
 </style>
