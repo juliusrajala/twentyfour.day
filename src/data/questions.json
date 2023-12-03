@@ -9,10 +9,10 @@
   },
   {
     "question": "How do you balance innovation with maintaining existing systems?",
-    "answer": "There’s a delicate balance, where time has to be secured for both. The clients business value often comes hand-in-hand with new features, while maintenance is a must to keep the current users content. If your team does sprints, pick items from both maintenance and feature backlogs. If your development is pull-based, make sure you provide some priority to balancing these. Pick both."
+    "answer": "Innovation or new features, are certainly the target with the best short term return. Therefore, they're usually also what the client is more interested in. Maintenance keeps the lights on though and getting new users is hardly worth it if you can't keep them due to instability. Do critical maintenance work first. Build mostly features that create value for clients. After that, do everything else."
   },
   {
-    "question": "Can you describe a particularly challenging bug you encountered and how you resolved it?",
+    "question": "Can you describe a particularly challenging bug you encountered recently and how you resolved it?",
     "answer": "A recent bug I encountered was not super challenging, still a pain in the ass to debug. I’ve been working on a SvelteKit during my free time. I received reports, where users session would get randomly cut out and I could not figure out what was killing them. Turns out my project had preloading links set up on for all link elements, including a logout button I had grabbed from the project template. When users hovered on the button, the signout-page would be preloaded and their session destroyed. Solution: Use preloading with care."
   },
   {
@@ -20,7 +20,7 @@
     "answer": "ya"
   },
   {
-    "question": "What's your approach to writing unit tests and integration tests?",
+    "question": "What are the key factors you consider for successful remote team collaboration?",
     "answer": ""
   },
   {
@@ -48,7 +48,7 @@
     "answer": ""
   },
   {
-    "question": "What strategies do you use to mentor junior developers?",
+    "question": "What strategies do you use to mentor developers?",
     "answer": ""
   },
   {
