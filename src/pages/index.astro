@@ -5,6 +5,8 @@ import RunningNavigation from "../components/RunningNavigation.astro";
 
 import questions from "../data/questions.json";
 
+// FIXME: This will need to be replaced with a better check by new years if
+// I want to keep the information available. On January 1, this will return 1.
 const currentDate = new Date().getDate();
 const questionOfTheDay = questions[currentDate - 1];
 const lastDateToShow = currentDate + 1;
