@@ -17,7 +17,7 @@
   },
   {
     "question": "How do you ensure code quality and maintainability in your team?",
-    "answer": "ya"
+    "answer": "It sometimes frustrates me that we’re still struggling with issue regarding code quality and I’m mostly speaking in the superficial fashion. By the end of 2023, we should have had linters and formatters available that would make the conversation mostly moot. I use any and all automatic tools that advice you on code quality. Maintainability seems more of an architectural question. Though following SOLID still goes a long way in keeping our code maintainable."
   },
   {
     "question": "What are the key factors you consider for successful remote team collaboration?",
