@@ -13,7 +13,7 @@
   },
   {
     "question": "Can you describe a particularly challenging bug you encountered recently and how you resolved it?",
-    "answer": "A recent bug I encountered was not super challenging, still a pain in the ass to debug. I’ve been working on a SvelteKit during my free time. I received reports, where users session would get randomly cut out and I could not figure out what was killing them. Turns out my project had preloading links set up on for all link elements, including a logout button I had grabbed from the project template. When users hovered on the button, the signout-page would be preloaded and their session destroyed. Solution: Use preloading with care."
+    "answer": "A recent bug I encountered was perhaps not particularly challenging, but still a pain in the ass to debug. I’ve been working on a SvelteKit project during my free time. Reports from some users mentioned sessions randomly dying. I could just not figure out what was happening, because it seemed the sessions were being expired via calls to the signout functionality. Turns out I had preloading links set up on for all link elements, including a logout button I had grabbed from the project template. When users hovered on the button, the signout-page would be preloaded and their sessions would be destroyed. Preload with care and consider if using a link to sign out your users is the best option. "
   },
   {
     "question": "How do you ensure code quality and maintainability in your team?",
