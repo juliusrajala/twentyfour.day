@@ -25,11 +25,7 @@
   },
   {
     "question": "How do you handle conflicting opinions within your team about technical approaches?",
-    "answer": ""
-  },
-  {
-    "question": "What are your go-to tools for code profiling and optimization?",
-    "answer": ""
+    "answer": "Open dialogue and respect for different perspectives. I encourage team discussions where everyone can present their views. In the end, decisions are made based on what aligns best with our the client's existing solutions, needs of the project and technical requirements. Sometimes this means going with the majority view, other times it's about finding a compromise."
   },
   {
     "question": "How do you stay updated with new programming languages and frameworks?",
