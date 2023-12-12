@@ -33,15 +33,15 @@
   },
   {
     "question": "What's your experience with adopting new technologies mid-project?",
-    "answer": ""
+    "answer": "I’ve had success with adopting new technologies during projects. I think it all comes down to the scope of the adoption and finding the correct places where to adopt new tech. This somewhat takes me back to earlier discussion regarding the balance of innovation and maintenance."
   },
   {
     "question": "Can you share an experience where you had to significantly refactor a codebase?",
-    "answer": ""
+    "answer": "I once spent a weekend porting the old codebase of app.thribune.com from JavaScript to TypeScript and updated all of our major dependencies and build-tools while doing it. That was a learning experience and actually started more as a more of a test to see how far we could go with some effective grepping. Half-way through, I realized I was so invested in this I had to push through. The TypeScript conversion was the easy part, since you could apply laxer rules at the beginning and fix things as you progress. But updating SCSS through a major version nearly took my sanity. Choose your battles and when you fight them."
   },
   {
     "question": "How do you approach documentation within your team?",
-    "answer": ""
+    "answer": "Documentation should come in layers, but the part that is probably most interesting to the team is the technical and architectural documentation, which I believe should live as close to the code as possible. Architectural docs and the high level documentation I prefer to find close to the project management tools for easy reference. Solution or lower level documentation might even live with the code. Newcomers to the team test your documentation each time someone starts and you iterate based on what they can’t find."
   },
   {
     "question": "What strategies do you use to mentor developers?",
