@@ -49,14 +49,14 @@
   },
   {
     "question": "How do you use AI-tools in your daily work?",
-    "answer": ""
+    "answer": "Depending on what's agreed upon with the client of course. 🤖 I've got a custom OpenAI wrapper I'm using to debug unfamiliar error messages and sometimes to review code. On the editor side, If I'm working with VS code, I'm likely using Github Copilot to support the development work.  I sometimes also play ball with OpenAI regarding architectural decisions and ideation for solutions"
   },
   {
-    "question": "How do you manage cross-functional team collaboration in projects?",
-    "answer": ""
+    "question": "What are your thoughts cross-functional team collaboration in projects?",
+    "answer": "Cross-functional teams often feel like the peak of performance in software projects. Having that solving power for different issues exist within the team makes for an eaasier existence and allows tackling issues much faster than playing back-and-forth between functional silos. Big 👍."
   },
   {
-    "question": "Can you discuss a time when you had to make a critical architectural decision?",
+    "question": "Can you discuss a time when you had to make a larger architectural decision?",
     "answer": ""
   },
   {
