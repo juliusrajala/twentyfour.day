@@ -4,6 +4,7 @@ import SourceLink from "../components/SourceLink.astro";
 import RunningNavigation from "../components/RunningNavigation.astro";
 
 import questions from "../data/questions.json";
+import Navigation from "../components/Navigation.astro";
 
 // FIXME: This will need to be replaced with a better check by new years if
 // I want to keep the information available. On January 1, this will return 1.
@@ -33,7 +34,6 @@ const toShow = questions.slice(0, lastDateToShow);
       </div>
       <RunningNavigation links={toShow} />
     </div>
-    <SourceLink />
   </main>
 </Layout>
 

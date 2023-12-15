@@ -1,0 +1,35 @@
+---
+import SourceLink from "./SourceLink.astro";
+---
+
+<ul class="navigation">
+  <li>
+    <a href="/">Twentyfour</a>
+  </li>
+  <li>
+    <a href="/who/">About me</a>
+  </li>
+  <li><SourceLink /></li>
+</ul>
+
+<style>
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navigation li {
+    list-style: none;
+  }
+
+  .navigation a {
+    padding: 1rem;
+    text-align: right;
+    color: var(--title-color);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+  }
+</style>

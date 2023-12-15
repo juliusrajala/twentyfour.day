@@ -1,0 +1,30 @@
+---
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <article class="info">
+    <slot />
+  </article>
+</Layout>
+
+<style is:global>
+  .info {
+    max-width: 800px;
+    color: #fffff0;
+  }
+
+  .info > h1 {
+    font-size: 3rem;
+    color: var(--title-color);
+    text-shadow: var(--text-emphasis);
+    font-weight: 600;
+  }
+  .info h2 {
+    font-weight: 500;
+  }
+  .info a {
+    color: var(--title-color);
+  }
+</style>

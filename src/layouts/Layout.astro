@@ -1,5 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
+import SiteDocument from "./Document.astro";
+import Navigation from "../components/Navigation.astro";
 interface Props {
   title: string;
 }
@@ -7,61 +9,40 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Twentyfour.day is the Corporate Software Engineering version of a beer advent calendar."
-    />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <meta property="og:image" content="https://twentyfour.day/meta-image.png" />
+<SiteDocument title={title}>
+  <slot />
+  <Navigation />
+</SiteDocument>
 
-    <title>{title}</title>
-    <script
-      defer
-      data-domain="twentyfour.day"
-      src="https://plausible.io/js/script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <ViewTransitions />
-  <body>
-    <slot />
-  </body>
+<style is:global>
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+    --text-emphasis: 2px 2px 0px rgba(0, 0, 0, 1), 4px 4px 0px white;
+    --title-color: rgb(251, 110, 110);
+  }
 
-  <style is:global>
-    :root {
-      --accent: 136, 58, 234;
-      --accent-light: 224, 204, 250;
-      --accent-dark: 49, 10, 101;
-      --accent-gradient: linear-gradient(
-        45deg,
-        rgb(var(--accent)),
-        rgb(var(--accent-light)) 30%,
-        white 60%
-      );
-    }
-    html {
-      font-family: "Poppins", system-ui, sans-serif;
-      background: #13151a;
-      height: 100vh;
-    }
-    body {
-      height: 100vh;
-    }
-    *,
-    all {
-      box-sizing: border-box;
-    }
-  </style>
-
-
-</html>
+  html {
+    font-family: "Poppins", system-ui, sans-serif;
+    background: #13151a;
+    height: 100vh;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  *,
+  all {
+    box-sizing: border-box;
+  }
+</style>

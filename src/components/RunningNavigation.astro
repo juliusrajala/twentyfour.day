@@ -4,6 +4,8 @@ interface Props {
 }
 const { links } = Astro.props;
 const currentPage = Astro.request.url;
+const path = currentPage.split("/");
+const pageDate = path[path.length - 1];
 ---
 
 <ul class="link-list">
@@ -13,9 +15,10 @@ const currentPage = Astro.request.url;
   {
     links.map((_, i) => {
       const href = `/s/of/consulting/${i + 1}`;
-      const className = currentPage.includes(href)
-        ? "navigation-link navigation-link--isActive"
-        : "navigation-link";
+      const className =
+        (i + 1).toString() === pageDate
+          ? "navigation-link navigation-link--isActive"
+          : "navigation-link";
       return (
         <li>
           <a class={className} href={href}>
