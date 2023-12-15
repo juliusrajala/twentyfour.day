@@ -57,7 +57,7 @@
   },
   {
     "question": "Can you discuss a time when you had to make a larger architectural decision?",
-    "answer": ""
+    "answer": "Quite a few years ago we were getting the product of our startup ready for some new clients to begin their usage of the platform. In order to prepare for this grand new clientele, we did a fair bit of refactoring to divide our platform into multiple components for easier changes down the line. Classic case of premature optimization and excessive boundaries. These changes slowed our development speed down to a crawl for a team of three. For that stage in our existance, a monorepo would have been both the easier and faster to develop option. 🤷 Lesson learned."
   },
   {
     "question": "How do you handle deadline pressures without compromising on code quality?",
