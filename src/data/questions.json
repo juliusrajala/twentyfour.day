@@ -49,7 +49,7 @@
   },
   {
     "question": "How do you use AI-tools in your daily work?",
-    "answer": "Depending on what's agreed upon with the client of course. 🤖 I've got a custom OpenAI wrapper I'm using to debug unfamiliar error messages and sometimes to review code. On the editor side, If I'm working with VS code, I'm likely using Github Copilot to support the development work.  I sometimes also play ball with OpenAI regarding architectural decisions and ideation for solutions"
+    "answer": "Depending on what's agreed upon with the client of course. 🤖 I've got a custom OpenAI wrapper I'm using to debug unfamiliar error messages and sometimes to review code. On the editor side, If I'm working with VS code, I'm likely using Github Copilot to support the development work. I sometimes also play ball with OpenAI regarding architectural decisions and ideation for solutions"
   },
   {
     "question": "What are your thoughts cross-functional team collaboration in projects?",
@@ -61,11 +61,11 @@
   },
   {
     "question": "How do you handle deadline pressures without compromising on code quality?",
-    "answer": ""
+    "answer": "I feel a lot of this comes down to tooling and setting realistic expectations. As discussed earlier, code quality should mainly be enforced via automatic tooling. Pressure can force suboptimal solutions though. Sometimes you have to make compromises to deliver within the expected time frame, just don’t compromise on critical issues or features."
   },
   {
     "question": "What's your approach to troubleshooting and debugging in a complex system?",
-    "answer": ""
+    "answer": "I feel a lot of this comes down to tooling and setting realistic expectations. As discussed earlier, code quality should mainly be enforced via automatic tooling. Pressure can force suboptimal solutions though. Sometimes you have to make compromises to deliver within the expected time frame, just don’t compromise on critical issues or features."
   },
   {
     "question": "How do you prioritize tasks in a fast-paced development environment?",
