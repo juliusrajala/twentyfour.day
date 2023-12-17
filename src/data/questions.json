@@ -69,14 +69,10 @@
   },
   {
     "question": "How do you prioritize tasks in a fast-paced development environment?",
-    "answer": ""
+    "answer": "I prioritize based on urgency, impact, and dependencies. Consider first the dependencies between your tasks to avoid backing yourself into a corner. When working on the actual implementation, critical tasks  go first. After critical tasks, it makes sense to consider the potential impact of each task on the project and prioritize those that will have the greatest impact for the project, always keeping the dependencies between tasks at mind."
   },
   {
     "question": "Can you share your experience with continuous integration and deployment?",
-    "answer": ""
-  },
-  {
-    "question": "How do you approach security concerns in your software development process?",
     "answer": ""
   },
   {
@@ -92,7 +88,11 @@
     "answer": ""
   },
   {
-    "question": "Can you share an example of a successful agile project you've been part of?",
+    "question": "How do you handle scalability challenges in your applications?",
+    "answer": ""
+  },
+  {
+    "question": "Can you describe a situation where you had to rapidly adapt to a new technology?",
     "answer": ""
   }
 ]
