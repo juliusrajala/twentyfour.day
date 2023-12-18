@@ -72,11 +72,11 @@
     "answer": "I prioritize based on urgency, impact, and dependencies. Consider first the dependencies between your tasks to avoid backing yourself into a corner. When working on the actual implementation, critical tasks  go first. After critical tasks, it makes sense to consider the potential impact of each task on the project and prioritize those that will have the greatest impact for the project, always keeping the dependencies between tasks at mind."
   },
   {
-    "question": "Can you share your experience with continuous integration and deployment?",
-    "answer": ""
+    "question": "How is your preferred continuous integration and deployment setup?",
+    "answer": "Automated and preferably using a tool I’m familiar with. GitLab CI and Github Actions are both pretty fantastic tools these days. I prefer a lot of releases over piling them together, though sometimes that’s necessary. In terms of user testing and faster iterations, having even feature branches deploy on a successfull test and build run makes a lot of sense and makes demoing the engineers work to stakeholders and designers a lot easier."
   },
   {
-    "question": "What has been your most successful project to date, and why?",
+    "question": "What has been your favourity project to date, and why?",
     "answer": ""
   },
   {
