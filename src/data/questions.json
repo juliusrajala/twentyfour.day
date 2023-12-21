@@ -77,11 +77,11 @@
   },
   {
     "question": "What has been your favourity project to date, and why?",
-    "answer": ""
+    "answer": "There’s been quite a few different projects I’ve been a fan of. Some of my first consulting work was for Fiba 3x3 Basketball and those products and implementations definitely still live rent free in my head. More recently, I’ve really enjoyed working on these slightly smaller scale projects with two or three other developers at the same. Those projects tend to feel like they’re moving fast and communication is still easy with a small number of chefs in the kitchen."
   },
   {
     "question": "How do you manage knowledge transfer within your team?",
-    "answer": ""
+    "answer": "Great knowledge transfer happens as a combination of multiple things. The first step should be solid, up-to-date documentation close to the code. A project's documentation should be tested against each new developer who joins the team. Secondly, members of a team should regularly team up to work on features or bugs together. Finding a common ground and understanding of chosen solutions comes a lot easier when people discuss their solutions face-to-face. Thirdly, reserve time for demos or show-and-tells or other similar events where team members may display the work and features they have recently completed."
   },
   {
     "question": "What are your thoughts on microservices vs monolithic architectures?",
