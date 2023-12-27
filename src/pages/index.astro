@@ -9,7 +9,10 @@ import Navigation from "../components/Navigation.astro";
 // FIXME: This will need to be replaced with a better check by new years if
 // I want to keep the information available. On January 1, this will return 1.
 const currentDate = new Date().getDate();
-const questionOfTheDay = questions[currentDate - 1];
+
+const randomDate = Math.floor(Math.random() * questions.length - 1);
+
+const questionOfTheDay = questions[currentDate - 1] || questions[randomDate];
 const lastDateToShow = currentDate + 1;
 const toShow = questions.slice(0, lastDateToShow);
 ---
@@ -27,9 +30,9 @@ const toShow = questions.slice(0, lastDateToShow);
       </h1>
 
       <div class="question-container">
-        <p>Today:</p>
+        <p>Look back:</p>
         <a href={"/s/of/consulting/" + currentDate} class="question-link"
-          >{questionOfTheDay.question}</a
+          >{randomDate}. {questionOfTheDay.question}</a
         >
       </div>
       <RunningNavigation links={toShow} />

@@ -85,14 +85,14 @@
   },
   {
     "question": "What are your thoughts on microservices vs monolithic architectures?",
-    "answer": ""
+    "answer": "Both microservices and monolithic architectures have their places in software development. While microservices can bring increased productivity and flexibility for multiple teams, monolithic architectures can offer simplicity and ease of development, especially for small teams. The key is to choose the approach that aligns with the specific needs and goals of the project, prioritizing faster and smoother development. Small teams should stick to whichever option allows for faster and smoother development, while considering the trade-offs between the two."
   },
   {
     "question": "How do you handle scalability challenges in your applications?",
-    "answer": ""
+    "answer": "Choosing the right technology, architecture, and having a sufficient amount of ``hardware``. Implementing caching mechanisms to reduce the load on the system. Utilizing load balancing techniques to distribute the workload across multiple servers."
   },
   {
     "question": "Can you describe a situation where you had to rapidly adapt to a new technology?",
-    "answer": ""
+    "answer": "Last autumn I had to pick up Swift & SwiftUI from zero. It was an educational process that taught me the ins and outs of the language with a real life use case. The circumstances supported the adoption and I received sufficient support from coworkers that helped me get up to speed fast enough."
   }
 ]
